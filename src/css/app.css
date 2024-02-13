@@ -1,0 +1,1282 @@
+/* app global css */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap");
+* {
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  height: 100vh;
+  /* Note: Width set to 10000px might cause horizontal scrolling, consider reducing it */
+  width: 100%; /* Adjust width as needed */
+}
+
+/* HEADER PART */
+#appHeader {
+  height: 100px;
+  background-color: #000000;
+}
+#headerToolbar {
+  margin: 2em 5.5em;
+}
+.headerLogo {
+  height: 3em;
+  width: 13.5em;
+}
+.q-toolbar {
+  padding: 0 0;
+}
+.q-tab__label {
+  font-size: 1.5em;
+}
+#colorfulText {
+  padding-top: 1vh;
+}
+
+/* FIRST PAGE */
+#cdsHead {
+  position: absolute;
+  bottom: -0.8em;
+  left: 2vw;
+  margin: 0 0 20px 40px;
+}
+#apAbout {
+  font-size: 2.3em;
+}
+
+.container {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.aboutPart {
+  padding-left: 3.5vh;
+  font-size: 1.7rem;
+}
+#btnTeam {
+  font-size: 1.4em;
+}
+#matIcon {
+  font-size: 3.5em;
+}
+.topSection {
+  width: 100vw;
+  height: 200vh;
+  padding-bottom: 20vh;
+
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+/* SECOND AND THIRD PAGE HEADING */
+.spHeading {
+  font-size: 60px;
+  font-weight: 900;
+
+  margin-bottom: 1%;
+}
+/* SECOND AND THIRD PAGE CONTENT */
+.spContent {
+  font-size: 24px;
+  padding-left: 18px;
+  max-width: 90vw;
+}
+/* SECOND AND THIRD PAGE LAYOUT */
+.sections {
+  width: 100vw;
+  height: 200vh;
+  padding-top: 8%;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+/* SECOND PAGE */
+#greenBox {
+  height: 100vh;
+  padding-left: 2%;
+}
+/* SECOND PAGE MENU */
+.services {
+  font-size: 44px;
+}
+
+/* THIRD PAGE */
+#blueBox {
+  height: 100vh;
+  padding-left: 2%;
+}
+/* THIRD PAGE MENU */
+.packages {
+  font-size: 42px;
+  width: 180vw;
+}
+
+/* FOURTH PAGE */
+.bottomSection {
+  padding-top: 0%;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  align-items: center;
+  position: sticky;
+}
+.threeBtnBox {
+  padding: 12em 2em;
+}
+.threeBtn {
+  background-color: rgb(83, 75, 75);
+  width: 22vw;
+  font-size: 3em;
+}
+.threeIcon {
+  font-size: 1.2em;
+}
+.footerLogo {
+  height: 68%;
+  width: 6%;
+  margin-left: 2vw;
+}
+
+/* TEAM PAGE */
+.teamContainer {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+#teamAbout {
+  font-size: 2em;
+}
+.teamAboutPart {
+  padding-left: 3.5vh;
+  font-size: 1.7rem;
+}
+
+.my-card {
+  width: 100%;
+  max-width: 450px;
+  max-height: 230px;
+  background: linear-gradient(105deg, #000c20 0%, #000 100%);
+}
+.teamPhoto {
+  width: 21.7em;
+  height: 14.7em;
+}
+
+/* EXTRAS */
+
+/* hidden sınıfı için display değerini none olarak ayarlar */
+.hidden {
+  display: none;
+}
+/* Animasyon için genel geçiş süresi */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+/* Fade in başlangıcı */
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+/* Fade in bitişi */
+.fade-enter-to {
+  opacity: 1;
+}
+/* Fade out başlangıcı (bu durumda aynı değerler kullanılabilir) */
+.fade-leave-from {
+  opacity: 0.5;
+}
+
+/* RESPONSIVE DESIGN PART */
+
+/* For resolutions 2560px and above */
+@media screen and (min-width: 2560px) {
+  #cdsHead {
+    bottom: -0.8em;
+    left: 1.3vw;
+  }
+  #greenBox {
+    height: 1080px;
+    padding-left: 2%;
+  }
+  #blueBox {
+    height: 1080px;
+    padding-left: 2%;
+  }
+  #apPara1 {
+    padding-top: 0em;
+  }
+  #apPara2 {
+    padding-top: 3.2em;
+  }
+  #apLogo {
+    padding-top: 6.5em;
+    padding-left: 42vw;
+  }
+  .threeBtn {
+    margin: 2vh 2vw;
+    width: 28vw;
+    height: 12vh;
+  }
+  .aboutPart {
+    padding-top: 10vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+  }
+  .teamAboutPart {
+    padding-left: 3.5vh;
+    margin-right: 3.5vh;
+    font-size: 1.4rem;
+  }
+  .services {
+    font-size: 44px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 42px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 140%;
+    max-width: 90vw;
+  }
+  .teamPhoto {
+    width: 15.7em;
+    height: 14.7em;
+  }
+}
+
+/* For resolutions between 1920px and 2559px */
+@media screen and (min-width: 1920px) and (max-width: 2559px) {
+  #headerToolbar {
+    margin: 2em 4.7em;
+  }
+  .headerLogo {
+    height: 3em;
+    width: 13.5em;
+  }
+  .spHeading {
+    font-size: 60px;
+    font-weight: 900;
+  }
+  #greenBox {
+    height: 1080px;
+    padding-left: 1.8%;
+  }
+  #blueBox {
+    height: 1080px;
+    padding-left: 1.8%;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -0.8em;
+    left: 0.9vw;
+  }
+  #apPara1 {
+    padding-top: 0vh;
+  }
+  #apPara2 {
+    padding-top: 8vh;
+  }
+  #apLogo {
+    padding-top: 6vh;
+    padding-left: 40vw;
+  }
+  .aboutPart {
+    font-size: 1.6rem;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-top: 10vh;
+  }
+  .teamAboutPart {
+    padding-left: 3.5vh;
+    margin-right: 3.5vh;
+    font-size: 1.4rem;
+  }
+  .threeBtn {
+    margin: 4vh 2vw;
+    width: 25vw;
+  }
+
+  .services {
+    font-size: 44px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 42px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 140%;
+    max-width: 70vw;
+  }
+
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 2vh;
+  }
+  .teamPhoto {
+    width: 15.7em;
+    height: 14.7em;
+  }
+}
+
+/* For resolutions between 1440px and 1919px */
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+  #headerToolbar {
+    margin: 2em 4.7em;
+  }
+  #cdsHead {
+    bottom: -0.8em;
+    left: 1.8vw;
+  }
+  .headerLogo {
+    height: 3em;
+    width: 13.5em;
+  }
+  #greenBox {
+    height: 1080px;
+    padding-left: 3%;
+  }
+  #blueBox {
+    height: 1080px;
+    padding-left: 3%;
+  }
+
+  .q-tab__label {
+    font-size: 1.2em;
+  }
+  .aboutPart {
+    font-size: 1.5rem;
+    padding-left: 4vh;
+    padding-right: 5%;
+    padding-top: 12vh;
+  }
+  .teamAboutPart {
+    padding-left: 3.5vh;
+    margin-right: 3.5vh;
+    font-size: 1.4rem;
+  }
+  #btnTeam {
+    font-size: 1.3em;
+  }
+  #apPara1 {
+    padding-top: 0vh;
+  }
+  #apPara2 {
+    padding-top: 9.3vh;
+  }
+  #apLogo {
+    padding-top: 10vh;
+    padding-right: 18vh;
+  }
+  .threeBtn {
+    margin: 4vh 3vw;
+    width: 24vw;
+    font-size: 2.8em;
+  }
+
+  .services {
+    font-size: 38px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 40px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 125%;
+    max-width: 82vw;
+  }
+
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 7vh;
+  }
+  .teamPhoto {
+    width: 15.7em;
+    height: 14.7em;
+  }
+}
+
+/* For resolutions between 1280px and 1439px */
+@media screen and (min-width: 1280px) and (max-width: 1439px) {
+  #headerToolbar {
+    margin: 2em 4.5em;
+  }
+  #greenBox {
+    height: 1080px;
+    padding-left: 3%;
+  }
+  #blueBox {
+    height: 1080px;
+    padding-left: 3%;
+  }
+  .q-tab__label {
+    font-size: 1.2em;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -0.8em;
+    left: 1.5vw;
+  }
+  .aboutPart {
+    font-size: 1.4rem;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 4%;
+  }
+  .teamAboutPart {
+    padding-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.4rem;
+  }
+
+  .teamPhoto {
+    width: 14.7em;
+    height: 14.7em;
+  }
+  #btnTeam {
+    font-size: 1.4em;
+  }
+  #apPara1 {
+    padding-top: 0.5vh;
+  }
+  #apPara2 {
+    padding-top: 4.5vh;
+  }
+  #apLogo {
+    padding-top: 6vh;
+    padding-left: 35vw;
+  }
+  .threeBtn {
+    margin: 5vh 2vw;
+    font-size: 1.7em;
+    width: 25vw;
+  }
+  .services {
+    font-size: 34px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 36px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 120%;
+    max-width: 86vw;
+  }
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 2vh;
+  }
+}
+
+/* For resolutions between 1024px and 1279px */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  #headerToolbar {
+    margin: 2em 4em;
+  }
+  #greenBox {
+    height: 1080px;
+    padding-left: 3%;
+  }
+  #blueBox {
+    height: 1080px;
+    padding-left: 3%;
+  }
+  .q-tab__label {
+    font-size: 1.2em;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -0.8em;
+    left: 1vw;
+  }
+
+  .aboutPart {
+    font-size: 1.4rem;
+    padding-top: 10vh;
+    padding-left: 5vw;
+    padding-right: 3%;
+  }
+  .teamAboutPart {
+    padding-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.4rem;
+  }
+  #btnTeam {
+    font-size: 1.4em;
+  }
+
+  #apPara1 {
+    padding-top: 0.5vh;
+  }
+  #apPara2 {
+    padding-top: 5vh;
+  }
+  #apLogo {
+    padding-top: 4vh;
+    padding-left: 35vw;
+  }
+  .threeBtn {
+    margin: 5vh 3vw;
+    font-size: 1.7em;
+    width: 25vw;
+  }
+  .services {
+    font-size: 38px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 36px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 120%;
+    max-width: 86vw;
+  }
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 7vh;
+  }
+  .teamPhoto {
+    width: 14.7em;
+    height: 14.7em;
+  }
+}
+
+/* For resolutions between 768px and 1023px */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #headerToolbar {
+    margin: 2em 1.8em;
+  }
+  .headerLogo {
+    height: 2.5em;
+    width: 11.5em;
+  }
+  #greenBox {
+    height: 1080px;
+  }
+  #blueBox {
+    height: 1080px;
+  }
+  .q-tab__label {
+    font-size: 1em;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -0.8em;
+    left: -2.9vw;
+  }
+  .aboutPart {
+    font-size: 1.3rem;
+    padding-top: 9vh;
+    padding-left: 3vw;
+    padding-right: 3%;
+  }
+  .teamAboutPart {
+    padding-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.4rem;
+  }
+  #apPara1 {
+    padding-top: 0vh;
+  }
+  #apPara2 {
+    padding-top: 4vh;
+  }
+  #apLogo {
+    padding-top: 8vh;
+    padding-left: 32vw;
+  }
+  .threeBtn {
+    margin: 3vh 22vw;
+    font-size: 1.4em;
+    width: 50vw;
+  }
+  #btnTeam {
+    font-size: 1.2em;
+  }
+  .threeIcon {
+    font-size: 120px;
+  }
+
+  .spHeading {
+    font-size: 3.6em;
+  }
+  .services {
+    font-size: 34px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 32px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 110%;
+    max-width: 84vw;
+  }
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 7vh;
+  }
+  .teamPhoto {
+    width: 14.7em;
+    height: 14.7em;
+  }
+  .footerLogo {
+    height: 7%;
+    width: 7%;
+    margin-left: 0vw;
+  }
+}
+
+/* For resolutions between 680px and 767px */
+@media screen and (min-width: 680px) and (max-width: 767px) {
+  .headerLogo {
+    height: 2.5em;
+    width: 2.5em;
+  }
+  .q-toolbar {
+    padding: 0 12px;
+  }
+  #headerToolbar {
+    margin: 2em 1.5em;
+  }
+  #btnTeam {
+    font-size: 1em;
+  }
+  .q-tab__label {
+    font-size: 0.9em;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -0.9em;
+    left: -2vw;
+    font-size: 3.4rem;
+  }
+  .aboutPart {
+    padding-top: 8.5vh;
+    padding-left: 1.5vh;
+    padding-right: 2.5vh;
+    font-size: 1.2rem;
+  }
+  .teamAboutPart {
+    padding-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.4rem;
+  }
+  #apPara1 {
+    padding-top: 1vh;
+  }
+  #apPara2 {
+    padding-top: 4vh;
+  }
+  #apLogo {
+    padding-top: 8vh;
+    padding-left: 31vw;
+  }
+
+  .threeBtn {
+    margin: 2vh 21vw;
+    font-size: 1.4em;
+    width: 50vw;
+  }
+  .threeIcon {
+    font-size: 60px;
+  }
+
+  .spHeading {
+    font-size: 3.4em;
+  }
+  .services {
+    font-size: 30px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 24px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 100%;
+    max-width: 80vw;
+  }
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 7vh;
+  }
+  .teamPhoto {
+    width: 14.7em;
+    height: 14.7em;
+  }
+  .footerLogo {
+    height: 7%;
+    width: 7%;
+    margin-left: 0vw;
+  }
+}
+
+/* For resolutions between 600px and 769px */
+@media screen and (min-width: 600px) and (max-width: 679px) {
+  .headerLogo {
+    height: 2.5em;
+    width: 2.5em;
+  }
+  .q-toolbar {
+    padding: 0 4px;
+  }
+  #headerToolbar {
+    margin: 2em 1.5em;
+  }
+
+  .q-tab__label {
+    font-size: 0.9em;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -1.05em;
+    left: -3vw;
+    font-size: 3rem;
+  }
+  .aboutPart {
+    padding-top: 8vh;
+    padding-left: 1.5vh;
+    padding-right: 2vh;
+    font-size: 1.2rem;
+  }
+  .teamAboutPart {
+    padding-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.4rem;
+  }
+  #btnTeam {
+    font-size: 0.8em;
+  }
+  #apPara1 {
+    padding-top: 1vh;
+  }
+  #apPara2 {
+    padding-top: 4vh;
+  }
+  #apLogo {
+    padding-top: 5vh;
+    padding-left: 33vw;
+  }
+
+  .spHeading {
+    font-size: 3.4em;
+    padding-top: 1.5em;
+  }
+  .services {
+    font-size: 30px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 24px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 100%;
+    max-width: 80vw;
+  }
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 2vh;
+  }
+  .teamPhoto {
+    width: 15.7em;
+    height: 14.7em;
+  }
+
+  .threeBtn {
+    margin: 2vh 20vw;
+    font-size: 1.3em;
+    width: 55vw;
+  }
+  .threeIcon {
+    font-size: 120px;
+  }
+  .footerLogo {
+    height: 10%;
+    width: 10%;
+    margin-left: 0vw;
+  }
+}
+
+/* For resolutions between 560px and 599px */
+@media screen and (min-width: 560px) and (max-width: 599px) {
+  .headerLogo {
+    height: 2.5em;
+    width: 2.5em;
+  }
+  .q-toolbar {
+    padding: 0 5px;
+  }
+  #headerToolbar {
+    margin: 2em 1.5em;
+  }
+  #btnTeam {
+    font-size: 0.8em;
+  }
+  .q-tab__label {
+    font-size: 0.9em;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -1.12em;
+    left: -3.2vw;
+    font-size: 2.8rem;
+  }
+  .aboutPart {
+    padding-top: 8vh;
+    padding-left: 1.5vh;
+    padding-right: 2vh;
+    font-size: 1.1rem;
+  }
+  .teamAboutPart {
+    padding-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.4rem;
+  }
+  #apPara1 {
+    padding-top: 1vh;
+  }
+  #apPara2 {
+    padding-top: 4vh;
+  }
+  #apLogo {
+    padding-top: 5vh;
+    padding-left: 30vw;
+  }
+
+  .threeBtn {
+    margin: 2vh 22vw;
+    font-size: 1.4em;
+    width: 60vw;
+  }
+  .threeIcon {
+    font-size: 70px;
+  }
+  .spHeading {
+    font-size: 3.4em;
+    padding-top: 1.5em;
+  }
+  .services {
+    font-size: 26px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 22px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 100%;
+    max-width: 80vw;
+  }
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 7vh;
+  }
+  .teamPhoto {
+    width: 14.7em;
+    height: 14.7em;
+  }
+  .footerLogo {
+    height: 7%;
+    width: 7%;
+    margin-left: 0vw;
+  }
+}
+
+/* For resolutions between 480px and 599px */
+@media screen and (min-width: 480px) and (max-width: 559px) {
+  .headerLogo {
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  #headerToolbar {
+    margin: 2em 1.5em;
+  }
+
+  .q-tab__label {
+    font-size: 0.8em;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -1.4em;
+    left: -4.5vw;
+    font-size: 2.4rem;
+  }
+  .aboutPart {
+    padding-top: 8vh;
+    padding-left: 1.5vh;
+    padding-right: 2vh;
+    font-size: 1rem;
+  }
+  .teamAboutPart {
+    padding-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.4rem;
+  }
+
+  .threeBtn {
+    margin: 2vh 22vw;
+    font-size: 1.4em;
+    width: 60vw;
+  }
+  .threeIcon {
+    font-size: 70px;
+  }
+  #btnTeam {
+    font-size: 0.6em;
+  }
+  #apPara1 {
+    padding-top: 1vh;
+  }
+  #apPara2 {
+    padding-top: 4vh;
+  }
+  #apLogo {
+    padding-top: 5vh;
+    padding-left: 28vw;
+  }
+  .spHeading {
+    font-size: 3.4em;
+    padding-top: 1.5em;
+  }
+  .services {
+    font-size: 26px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 22px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 100%;
+    max-width: 80vw;
+  }
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 2vh;
+  }
+  .teamPhoto {
+    width: 14.7em;
+    height: 14.7em;
+  }
+  .footerLogo {
+    height: 10%;
+    width: 10%;
+    margin-left: 0vw;
+  }
+}
+
+/* For resolutions between 425px and 479px */
+@media screen and (min-width: 425px) and (max-width: 479px) {
+  .headerLogo {
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  #headerToolbar {
+    margin: 2em 1.5em;
+  }
+
+  .q-tab__label {
+    font-size: 0.8em;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -1.6em;
+    left: -6vw;
+    font-size: 2.2rem;
+  }
+  .aboutPart {
+    padding-top: 3vh;
+    padding-left: 1.8vh;
+    padding-right: 2vh;
+    font-size: 1rem;
+  }
+  .teamAboutPart {
+    padding-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.4rem;
+  }
+  #apPara1 {
+    padding-top: 1vh;
+  }
+  #apPara2 {
+    padding-top: 3vh;
+  }
+  #apLogo {
+    padding-top: 5vh;
+    padding-left: 26vw;
+  }
+
+  .threeBtn {
+    margin: 2vh 22vw;
+    font-size: 1.4em;
+    width: 60vw;
+  }
+  .threeIcon {
+    font-size: 70px;
+  }
+  #btnTeam {
+    font-size: 0.6em;
+  }
+  .spHeading {
+    font-size: 3em;
+    padding-top: 2em;
+  }
+  .services {
+    font-size: 22px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 18px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 100%;
+    max-width: 80vw;
+  }
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 7vh;
+  }
+  .teamPhoto {
+    width: 14.7em;
+    height: 14.7em;
+  }
+  .footerLogo {
+    height: 10%;
+    width: 10%;
+    margin-left: 0vw;
+  }
+}
+
+/* For resolutions between 320px and 424px */
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  .headerLogo {
+    height: 2.5em;
+    width: 2.5em;
+  }
+
+  #headerToolbar {
+    margin: 2em 1.5em;
+  }
+
+  .q-tab__label {
+    font-size: 0.7em;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -1.95em;
+    left: -7.3vw;
+    font-size: 1.8rem;
+  }
+  #apAbout {
+    font-size: 2.2em;
+  }
+  .aboutPart {
+    padding-top: 11.5vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    font-size: 0.8rem;
+  }
+  .teamAboutPart {
+    padding-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.4rem;
+  }
+  #btnTeam {
+    font-size: 0.6em;
+  }
+  #apPara1 {
+    padding-top: 1vh;
+  }
+  #apPara2 {
+    padding-top: 3vh;
+  }
+  #apLogo {
+    padding-top: 4vh;
+    padding-left: 22vw;
+  }
+
+  .threeBtn {
+    margin: 2vh 33vw;
+    font-size: 1em;
+    width: 70vw;
+  }
+  .threeIcon {
+    font-size: 70px;
+  }
+  .spHeading {
+    font-size: 2.4em;
+    padding-top: 1em;
+  }
+  .services {
+    font-size: 20px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 18px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 90%;
+    max-width: 80vw;
+  }
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 7vh;
+  }
+  .teamPhoto {
+    width: 14.7em;
+    height: 14.7em;
+  }
+  .footerLogo {
+    height: 10%;
+    width: 10%;
+    margin-left: 0vw;
+  }
+}
+
+/* For resolutions 320px and below */
+@media screen and (max-width: 319px) {
+  .headerLogo {
+    height: 2.5em;
+    width: 2.5em;
+  }
+  #headerToolbar {
+    margin: 2em 1.5em;
+  }
+  .q-tab__label {
+    font-size: 0.7em;
+  }
+  #cdsHead {
+    position: absolute;
+    bottom: -2.2em;
+    left: -10vw;
+    font-size: 1.6rem;
+  }
+  #apAbout {
+    font-size: 2em;
+  }
+  .aboutPart {
+    padding-top: 15vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    font-size: 0.6rem;
+  }
+  .teamAboutPart {
+    padding-left: 2vh;
+    margin-right: 2vh;
+    font-size: 1.4rem;
+  }
+  #btnTeam {
+    font-size: 0.6em;
+  }
+  #apPara1 {
+    padding-top: 1vh;
+  }
+  #apPara2 {
+    padding-top: 3vh;
+  }
+  #apLogo {
+    padding-top: 5vh;
+    padding-left: 26vw;
+  }
+
+  .threeBtn {
+    margin: 2vh 33vw;
+    font-size: 1em;
+    width: 70vw;
+  }
+  .threeIcon {
+    font-size: 70px;
+  }
+
+  .spHeading {
+    font-size: 1.6em;
+    padding-top: 2em;
+  }
+  .services {
+    font-size: 16px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .packages {
+    font-size: 16px;
+    font-weight: 600;
+    width: 90vw;
+  }
+  .spContent {
+    font-size: 70%;
+    max-width: 80vw;
+  }
+  #teamPara1 {
+    padding-top: 0vh;
+  }
+  #teamPara2 {
+    padding-top: 2vh;
+  }
+  .teamPhoto {
+    width: 21.7em;
+    height: 14.7em;
+  }
+}
